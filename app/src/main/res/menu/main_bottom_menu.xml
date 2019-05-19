@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/graph"
+        android:id="@+id/nav_home"/>
+
+    <item
+        android:title="App"
+        android:icon="@drawable/teamwork"
+        android:id="@+id/nav_app"/>
+
+    <item
+        android:title="Store"
+        android:icon="@drawable/garbage"
+        android:id="@+id/nav_services"/>
+    <item
+        android:title="Store"
+        android:icon="@drawable/garbage"
+        android:id="@+id/nav_wallet"/>
+
+    <item
+        android:title="Account"
+        android:icon="@drawable/person"
+        android:id="@+id/nav_acccount"/>
+
+
+</menu>

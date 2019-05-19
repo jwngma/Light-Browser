@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:id="@+id/search_rel"
+            android:background="@drawable/bg_brinjal_bottom_grey">
+
+            <!--<LinearLayout-->
+                <!--android:background="@drawable/bg_brinjal_bottom_grey"-->
+                <!--android:id="@+id/search_lin"-->
+                <!--android:paddingLeft="2dp"-->
+                <!--android:paddingRight="2dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="10"-->
+                <!--&gt;-->
+
+                <!--<EditText-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:id="@+id/edt_url"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:background="@drawable/bg_edit_text"-->
+                    <!--android:hint="Search or Enter Url..."-->
+                    <!--android:paddingLeft="10dp" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="4"-->
+                    <!--android:id="@+id/btn_search"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:src="@drawable/ic_search"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="4"-->
+                    <!--android:id="@+id/btn_home"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:src="@drawable/ic_home" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:background="@drawable/box_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+                <EditText
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/edt_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Search or Enter Url..."
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:id="@+id/btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_search" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="1dp"
+            android:layout_above="@id/rel_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_rel">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_bottom"
+            android:background="@drawable/bg_white_top_grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/search_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/search_bottom_menu">
+
+            </android.support.design.widget.BottomNavigationView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

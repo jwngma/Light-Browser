@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+
+        <RelativeLayout
+            android:id="@+id/alpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+
+                android:id="@+id/rel_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#2196F3"
+                android:weightSum="3"
+                android:gravity="center"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+
+                    <EditText
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:id="@+id/edt_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_edit_text"
+                        android:hint="Search or Enter Url..."
+                        android:paddingLeft="10dp" />
+
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:id="@+id/btn_search"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_height="wrap_content"
+                        android:text="Search" />
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/rel_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rel_mid1">
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/facebookBtn"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/garbage"
+                        android:text="FaceBook"
+                        />
+                    <Button
+                        android:id="@+id/youtubeBtn"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/graph"
+                        android:text="Youtube"
+                        />
+                    <Button
+                        android:id="@+id/instagramBtn"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/left_arrow"
+                        android:text="InstaGram"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin2"
+                    android:layout_below="@id/lin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/snapchatBtn"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/pdf"
+                        android:text="Snapchat"
+                        />
+                    <Button
+                        android:id="@+id/yahooBtn"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/person"
+                        android:text="yahoo"
+                        />
+                    <Button
+                        android:id="@+id/googleBtn"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/teamwork"
+                        android:text="Google"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin3"
+                    android:layout_below="@id/lin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/pdf"
+                        android:text="Google"
+                        />
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/person"
+                        android:text="Google"
+                        />
+                    <Button
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/teamwork"
+                        android:text="Google"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+</FrameLayout>
